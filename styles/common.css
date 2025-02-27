@@ -1,0 +1,111 @@
+/* ========================================= header */
+header {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+header > * {white-space: nowrap;}
+header .logo-menu-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+header #menu {position: relative;}
+header #menu .menu-btn {width: 22px;}
+header #menu .menu-btn img {width: 100%;}
+/* ========================================= 메뉴 팝업창 */
+header #menu .menu-list {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 43px; left: 0;
+    padding: 40px 58px 40px 40px;
+    display: none;
+}
+header #menu .menu-list  .primary {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+header #menu .menu-list  .primary > li {}
+header #menu .menu-list  .primary > li  a {
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+header #menu .menu-list  .primary .prefer-list {}
+header #menu .menu-list  .primary .prefer-list .depth1 {
+    display: block;
+    margin-bottom: 10px;
+}
+header #menu .menu-list  .primary .prefer-list .depth2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    padding-left: 10px;
+}
+header #menu .menu-list  .primary .prefer-list .depth2 > li {}
+header #menu .menu-list  .primary .prefer-list .depth2 > li a {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+header #menu .menu-list  .secondary {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+header #menu .menu-list  .secondary > li {
+    padding: 8px 0;
+    background-color: #FFBE46;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+header #menu .menu-list  .secondary > li:nth-child(1) {width: 59px;}
+header #menu .menu-list  .secondary > li:nth-child(2) {width: 98px;}
+header #menu .menu-list  .secondary > li a {font-weight: 500; color: #fff;}
+header #menu .menu-list  .about-cs {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+header #menu .menu-list  .about-cs > li {}
+header #menu .menu-list  .about-cs > li a {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+header #menu .menu-list > .instagram {
+    width: 24px;
+}
+header #menu .menu-list > .instagram a {}
+header #menu .menu-list > .instagram a img {width: 100%;}
+header #logo {width: 80px;}
+header #logo a {}
+header #logo a img {width: 100%;}
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+header .nav li {}
+header .nav li a {
+    display: block;
+    font-size: 0.813rem;
+    font-weight: 500;
+}
+header .nav .login {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    letter-spacing: 0;
+}
+header .nav .login a {color: #fff;}
+/* ========================================= main */
+/* ========================================= hero bnr */
+/* ========================================= section1 */
+/* ========================================= section2 */
+/* ========================================= section3 */

@@ -1,0 +1,442 @@
+/* ============================================================ header */
+header {
+    position: sticky;
+    top: 0; 
+    z-index: 999;
+}
+/* ============================================================ main */
+main {}
+main > * {white-space: nowrap;}
+/* ============================================================ 히어로배너 */
+#hero-bnr {
+    width: 100vw; height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-bnr video {width: 100%;}
+#hero-bnr .slogan-searchbar {
+    width: 100%; height: 100%;
+    padding: 120px 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute; top: 0; left: 0;
+}
+/* ============================================================ 슬로건 */
+#hero-bnr #slogan {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #fff;
+}
+/* ============================================================ 검색창 */
+#hero-bnr .search-bar {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50px;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-bnr .search-bar .search-input {
+    width: 100%;
+    background-color: transparent;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+#hero-bnr .search-bar .search-input::placeholder {
+    color:  rgba(255,255,255,0.5);
+}
+#hero-bnr .search-bar .search-btn {width: 24px;}
+#hero-bnr .search-bar .search-btn img {width: 100%;}
+/* ============================================================ section-wrap */
+#section-wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 80px;
+    height: 100vh;
+    padding:80px 80px 0;
+    position: sticky;
+    top: 0; left: 0;
+    overflow: hidden;
+}
+#section1 {
+    width: calc((100% / 5) * 3);
+    min-width: 940px;
+}
+#section2 {
+    width: calc((100% / 5) * 1.5);
+    min-width: 515px;
+    height: 730px;
+}
+#section3 {
+    width: calc((100% / 5) * 0.5);
+    min-width: 145px;
+}
+/* ============================================================ section1, 공통 */
+#section1 {
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE, Edge에서 스크롤 숨기기 */
+}
+#section1::-webkit-scrollbar {display: none; /* chrome에서 스크롤 숨기기 */}
+#section1 .content-section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 100px;
+}
+#section1 .content-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+#section1 .content-section .section-header > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+#section1 .content-section .more-btn {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+}
+#section1 .content-section .more-btn img {
+    width: 9px;
+    margin-left: 8px;
+}
+#section1 .content-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+#section1 .content-wrap .card {flex: 1;}
+#section1 .content-wrap .card .content-image {
+    margin-bottom: 12px;
+    position: relative;
+}
+#section1 .content-wrap .card .content-image a {}
+#section1 .content-wrap .card .content-image a img {width: 100%;}
+#section1 .content-wrap .card .content-image .scrap-btn {
+    width: 12px;
+    position: absolute;
+    top: 12px; right: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+#section1 .content-wrap .card .content-image .scrap-btn img {width: 100%;}
+#section1 .content-wrap .card .content-image:hover .scrap-btn {opacity: 1;}
+#section1 .content-wrap .card .content-title {font-size: 0.88rem;}
+#section1 .content-wrap .card .content-title h2 {font-weight: 600;}
+#section1 .content-wrap .card .content-title p {margin-bottom: 4px;}
+/* ============================================================ section1 오늘의큐레이션 */
+#section1 .today {}
+/* ============================================================ section1 취향맞춤컬렉션 */
+#section1 .prefer {}
+#section1 .prefer .btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+#section1 .prefer .btn-wrap .tab {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+#section1 .prefer .btn-wrap .tab button {
+    padding: 8px 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #DDDDDD;
+    color: #8F8F8F;
+    border-radius: 50px;
+    font-size: 0.75rem;
+}
+#section1 .prefer .btn-wrap .tab button.active {
+    color: #000;
+    font-weight: 600;
+}
+/* ============================================================ section1 지금인기여행지 */
+#section1 .popular {}
+#section1 .popular .content-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#section1 .popular .content-wrap .location {
+    flex: 1;
+    position: relative;
+}
+#section1 .popular .content-wrap .location a {display: block;}
+#section1 .popular .content-wrap .location a img {
+    width: 100%;
+    display: block; /* 이미지 아래 여백 제거 */
+}
+#section1 .popular .content-wrap .location a::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: opacity 0.2s;
+}
+#section1 .popular .content-wrap .location a:hover::after {
+    opacity: 0;
+}
+#section1 .popular .content-wrap .location .loca-name {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    text-align: center;
+}
+#section1 .popular .content-wrap .location .loca-name .bold {
+    font-size: 1em;
+    font-weight: 600;
+}
+/* ============================================================ section1 여행프로그램 */
+#section1 .program {}
+#section1 .program .program-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#section1 .program .program-wrap .prgr {
+    flex: 1;
+}
+#section1 .program .program-wrap .prgr .content {
+    position: relative;
+}
+#section1 .program .program-wrap .prgr .content .content-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    top: 24px; left: 20px;
+}
+#section1 .program .program-wrap .prgr .content .content-title .scrap {width: 12px;}
+#section1 .program .program-wrap .prgr .content .content-title .scrap img {width: 100%;}
+#section1 .program .program-wrap .prgr .content .content-title > h2 {
+    line-height: 1.4;
+    font-weight: 600;
+}
+#section1 .program .program-wrap .prgr .content .content-title > h2 .prgr-title {font-size: 0.88rem;}
+#section1 .program .program-wrap .prgr .content .content-image {}
+#section1 .program .program-wrap .prgr .content .content-image a {}
+#section1 .program .program-wrap .prgr .content .content-image a img {width: 100%;}
+#section1 .program .program-wrap .prgr .price-reserve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#section1 .program .program-wrap .prgr .price-reserve .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc((100% - 12px) / 2);
+    padding: 14px 20px;
+    font-size: 0.88rem; font-weight: 500;
+    letter-spacing: 0;
+    background-color: #f8f8f8;
+    border: 1px solid #DDDDDD;
+    border-radius: 50px;
+}
+#section1 .program .program-wrap .prgr .price-reserve .price img {width: 10px;}
+#section1 .program .program-wrap .prgr .price-reserve .reserve-btn {
+    width: calc((100% - 12px) / 2);
+    padding: 14px 20px;
+    background-color: #ffb950;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.88rem; font-weight: 500;
+    letter-spacing: 0;
+}
+/* ============================================================ section1 여행프로그램 타이틀 개별 색상 */
+#section1 .program .program-wrap .prgr1 .content .content-title > h2 {color: #8F8F8F;}
+#section1 .program .program-wrap .prgr2 .content .content-title > h2,
+#section1 .program .program-wrap .prgr3 .content .content-title > h2 {color: #fff;}
+/* ============================================================ section1 스팟큐레이션 */
+#section1 .spot {}
+/* ============================================================ section1 + footer */
+#section1 #footer {
+    margin: 100px 0 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F8F8F8;
+}
+#section1 #footer .legal-terms {
+    font-size: 0.75rem;
+}
+#section1 #footer .legal-terms .terms {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+#section1 #footer .legal-terms .terms a {font-weight: 500;}
+#section1 #footer .legal-terms .legal {
+    display: flex; 
+    flex-direction: column;
+    gap: 14px;
+    color: #8F8F8F;
+}
+#section1 #footer .legal-terms .legal .corporate {}
+#section1 #footer .legal-terms .legal .legals {
+    display: flex;
+    gap: 24px;
+}
+#section1 #footer .legal-terms .legal .legals .lefts,
+#section1 #footer .legal-terms .legal .legals .rights {line-height: 1.4;}
+#section1 #footer .legal-terms .legal .legals .rights > a {
+    font-weight: 600;
+    color: #8F8F8F;
+}
+#section1 #footer .legal-terms .legal .copyright {}
+#section1 #footer .cs-center {width: 300px;}
+#section1 #footer .cs-center h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+#section1 #footer .cs-center p {
+    font-size: 0.75rem;
+    color: #6D6D6D;
+    margin-bottom: 40px;
+}
+#section1 #footer .cs-center .link-btn {
+    display: flex;
+    gap: 12px;
+}
+#section1 #footer .cs-center .link-btn .faq,
+#section1 #footer .cs-center .link-btn .inquiry {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.75rem; letter-spacing: 0;
+    display: block;
+    width: 80px; padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section1 #footer .cs-center .link-btn .faq img,
+#section1 #footer .cs-center .link-btn .inquiry img {width: 9px;}
+/* ============================================================ section1 스크롤 안내 아이콘 */
+#section1 .scroll-icon {
+    width: 30px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%; transform: translateX(-50%);
+    z-index: 2;
+    position: sticky;
+}
+#section1 .scroll-icon a {}
+#section1 .scroll-icon a img {width: 100%; opacity: 80%;}
+#section1 .scroll-icon .down img {animation: shake 1s infinite;}
+#section1 .scroll-icon .up img {display: none;}
+#section1 .scroll-icon .down img:hover {}
+@keyframes shake {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+/* ============================================================ section2 */
+#section2 {position: relative;}
+#section2 .typical-bnr {
+    width: 100%; height: 730px; /* swiper 너비, 높이 설정 필수 */
+}
+#section2 .typical-bnr .swiper-wrapper {}
+#section2 .typical-bnr .swiper-wrapper .swiper-slide {
+    position: relative;
+}
+#section2 .typical-bnr .swiper-wrapper .swiper-slide a {
+    position: absolute; top: 0; left: 0;
+    z-index: 1;
+}
+#section2 .typical-bnr .swiper-wrapper .swiper-slide a img {width: 100%;}
+#section2 .typical-bnr .swiper-wrapper .swiper-slide .sub-title {
+    position: absolute;
+    top: 80px;
+    left: 50%; transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: #fff;
+}
+#section2 .typical-bnr .swiper-wrapper .swiper-slide .sub-title .title {
+    font-size: 1.38rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+/* ============================================================ section2 개별 슬라이드 */
+#section2 .typical-bnr .swiper-wrapper .slide1 {}
+#section2 .typical-bnr .swiper-wrapper .slide2 {}
+#section2 .typical-bnr .swiper-wrapper .slide3 {}
+#section2 .typical-bnr .swiper-wrapper .slide4 .sub-title {color: #000;}
+#section2 .typical-bnr .swiper-wrapper .slide5 {}
+/* ============================================================ section2 슬라이드 버튼 */
+#section2 .slide-btn {
+    position: absolute;
+    z-index: 2;
+    top: auto; bottom: 40px;
+    left: 50% ; transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#section2 .slide-btn .prev,
+#section2 .slide-btn .next {width: 22px;}
+#section2 .slide-btn .prev img,
+#section2 .slide-btn .next img {width: 100%;}
+/* ============================================================ section2 슬라이드 넘버 */
+#section2 .slide-btn .slide-number {
+    font-size: 0.75rem;
+    color: #fff;
+}
+/* ============================================================ section3 */
+#section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+#section3 .event {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#section3 .event .eventcard {}
+#section3 .event .eventcard > img {width: 100%;}
+#section3 .event .more-event-btn {
+    font-size: 0.75rem;
+    text-align: right;
+}
+#section3 .event .more-event-btn > img {
+    width: 9px;
+    margin-left: 8px;
+}
+#section3 .instagram {
+    display: block;
+    width: 30px;
+}
+#section3 .instagram img {width: 100%;}
+#section3 .store {
+    width: 120px;
+    padding: 14px 0;
+    background-color: #ffbe46;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 50px;
+}
