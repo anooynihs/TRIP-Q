@@ -1,3 +1,6 @@
+
+/* ========================================= body */
+body {overflow-x: hidden; min-width: 1920px;}
 /* ========================================= header */
 header {
     padding: 20px 80px;
@@ -19,7 +22,7 @@ header #menu .menu-list {
     display: flex;
     flex-flow: column nowrap;
     position: absolute;
-    top: 43px; left: 0;
+    top: 30px; left: 0;
     padding: 40px 58px 40px 40px;
     display: none;
 }
@@ -96,14 +99,14 @@ header .nav li a {
     font-size: 0.813rem;
     font-weight: 500;
 }
-header .nav .login {
-    background-color: #000;
+header .nav .login {}
+header .nav .login a {
     color: #fff;
+    background-color: #000;
     padding: 8px 18px;
     border-radius: 50px;
     letter-spacing: 0;
 }
-header .nav .login a {color: #fff;}
 /* ========================================= main */
 /* ========================================= hero bnr */
 /* ========================================= section1 */
