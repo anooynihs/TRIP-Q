@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>감도 높은 여행 큐레이션 플랫폼 TRIP Q</title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>TRIP Q</title>
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./script/index.js" defer></script>
-    <script src="./script/common.js" defer></script>
 </head>
 <body>
     <!-- header -->
@@ -37,7 +34,7 @@
                         </li>
                         <li><a href="#">지금 가장 감도 높은 여행지</a></li>
                         <li><a href="#">TRIP Q 여행 프로그램</a></li>
-                        <li><a href="#">당신의 감도를 한층 업그레이 시켜줄 스팟</a></li>
+                        <li><a href="#">당신의 감도를<br>한층 업그레이드 시켜줄 스팟</a></li>
                     </ul>
                     <ul class="secondary">
                         <li><a href="#">이벤트</a></li>
@@ -51,12 +48,12 @@
                     <p class="instagram"><a href="#"><img src="./images/icon/instagram.png" alt="인스타그램"></a></p>
                 </div>
             </div>
-            <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="메인페이지 가기"></a></h1>
+            <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="감도 높은 여행 큐레이션 플랫폼 TRIP Q"></a></h1>
         </div>
         <ul class="nav">
             <li><a href="#">나의 여행 아카이브</a></li>
             <li><a href="#">예약확인</a></li>
-            <li class="login"><a href="#">로그인</a></li>
+            <li class="login"><a href="./login.html">로그인</a></li>
         </ul>
     </header>
     <!-- main -->
@@ -66,10 +63,10 @@
             <video src="./videos/hero-video1.mp4" autoplay muted loop></video>
             <div class="slogan-searchbar">
                 <h1 id="slogan">감도 높은 여행을 위한 여행 큐레이션 플랫폼 트립큐는
-                    <br>당신의 취향에 맞는 여행을 위해 매일 새로운 영감을 발굴하고 큐레이션합니다.
+                    <br>당신의 취향에 맞는 여행을 위해 매일 새로운 영감을 발굴하고 큐레이션합니다
                 </h1>
                 <form action="search-bar" class="search-bar">
-                    <input type="text" class="search-input" placeholder="지금 떠나고 싶은 여행을 검색해 보세요.">
+                    <input type="text" class="search-input" placeholder="지금 떠나고 싶은 여행을 검색해 보세요">
                     <button type="button" class="search-btn"><img src="./images/icon/search-W.png" alt="검색하기"></button>
                 </form>
             </div>
@@ -83,13 +80,13 @@
                     <div class="today">
                         <div class="section-header">
                             <h2>오늘의 큐레이션</h2>
-                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="컨텐츠 모두보기"></a>
+                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="콘텐츠 모두보기"></a>
                         </div>
                         <div class="content-wrap">
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card1.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>새해에 이보다 중요한게 있을까요</p>
@@ -99,7 +96,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card2.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>5년 만에 우리의 품으로 돌아온</p>
@@ -109,7 +106,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card3.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-W.png" data-active="add-location-fill-W.png"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>다가오는 봄을 기다리며</p>
@@ -131,13 +128,13 @@
                                 <button type="button">문화, 예술</button>
                                 <button type="button">공간</button>
                             </div>
-                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="컨텐츠 모두보기"></a>
+                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="콘텐츠 모두보기"></a>
                         </div>
                         <div class="content-wrap">
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card4.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>Tokyo, Japan</p>
@@ -147,7 +144,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card5.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>Berlin, Germany</p>
@@ -157,7 +154,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card6.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>Busan, South Korea</p>
@@ -170,7 +167,7 @@
                     <div class="popular">
                         <div class="section-header">
                             <h2>지금 가장 감도 높은 여행지</h2>
-                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="컨텐츠 모두보기"></a>
+                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="콘텐츠 모두보기"></a>
                         </div>
                         <div class="content-wrap">
                             <div class="location loca1">
@@ -214,13 +211,13 @@
                     <div class="program">
                         <div class="section-header">
                             <h2>TRIP Q 여행 프로그램</h2>
-                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="컨텐츠 모두보기"></a>
+                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="콘텐츠 모두보기"></a>
                         </div>
                         <div class="program-wrap">
                             <div class="prgr prgr1">
                                 <div class="content">
                                     <div class="content-title">
-                                        <button type="button" class="scrap"><img src="./images/icon/add-location-G.png" alt="스크랩하기"></button>
+                                        <button type="button" class="scrap-btn" data-default="add-location-G.png" data-active="add-location-fill-G.png"><img src="./images/icon/add-location-G.png" alt="스크랩하기"></button>
                                         <h2>
                                             <span class="prgr-title">모든 계절이 여행하기 좋은</span>
                                             <br>튀르키예 5일 Half 패키지투어
@@ -241,7 +238,7 @@
                             <div class="prgr prgr2">
                                 <div class="content">
                                     <div class="content-title">
-                                        <button type="button" class="scrap"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
+                                        <button type="button" class="scrap-btn" data-default="add-location-W.png" data-active="add-location-fill-W.png"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
                                         <h2>
                                             <span class="prgr-title">걷다보면 인생이 보이는 길</span>
                                             <br>20일의 산티아고 순례길
@@ -262,9 +259,9 @@
                             <div class="prgr prgr3">
                                 <div class="content">
                                     <div class="content-title">
-                                        <button type="button" class="scrap"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
+                                        <button type="button" class="scrap-btn" data-default="add-location-W.png" data-active="add-location-fill-W.png"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
                                         <h2>
-                                            <span class="prgr-title">진짜 특별한 탐험이 되어 줄</span>
+                                            <span class="prgr-title">진짜 특별한 탐험이 되어줄</span>
                                             <br>남아프리카 나미비아 6박 8일
                                         </h2>
                                     </div>
@@ -282,17 +279,17 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 당신의 감도를 한층 업그레이 시켜줄 스팟 -->
+                    <!-- 당신의 감도를 한층 업그레이드 시켜줄 스팟 -->
                     <div class="spot">
                         <div class="section-header">
-                            <h2>당신의 감도를 한층 업그레이 시켜줄 스팟</h2>
-                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="컨텐츠 모두보기"></a>
+                            <h2>당신의 감도를 한층 업그레이드 시켜줄 스팟</h2>
+                            <a href="#" class="more-btn">MORE<img src="./images/icon/arrow-B.png" alt="콘텐츠 모두보기"></a>
                         </div>
                         <div class="content-wrap">
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card7.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-W.png" data-active="add-location-fill-W.png"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>우리가 꿈꾸던 휴양지</p>
@@ -302,7 +299,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card8.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-W.png" data-active="add-location-fill-W.png"><img src="./images/icon/add-location-W.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>Jazz is everywhere</p>
@@ -312,7 +309,7 @@
                             <div class="card">
                                 <div class="content-image">
                                     <a href="#"><img src="./images/content/card9.jpg" alt=""></a>
-                                    <button type="button" class="scrap-btn"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
+                                    <button type="button" class="scrap-btn" data-default="add-location-B.png" data-active="add-location-fill-B.png"><img src="./images/icon/add-location-B.png" alt="스크랩하기"></button>
                                 </div>
                                 <div class="content-title">
                                     <p>도쿄 하라주쿠의 쇼핑가 뒷골목에 위치한</p>

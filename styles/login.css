@@ -1,0 +1,88 @@
+/* ========================================= body */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+/* ========================================= container */
+.container {
+    width: 350px; 
+    margin: 122px auto 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+h2 {
+    font-size: 1.25rem; 
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container > span {
+    display: block;
+    margin:0 auto 60px;
+    width: 80px;
+}
+span img {width: 100%;}
+form {}
+form input {
+    width: 100%;
+    padding: 15px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input::placeholder {font-size: 0.875rem; color: #8f8f8f;}
+form #user-email {}
+form #user-email::placeholder {}
+form #user-pw {margin-top: 12px;}
+form #user-pw::placeholder {}
+.state {
+    margin: 40px 0;
+}
+.state #agree {}
+.state label {
+    font-size: 0.75rem;
+    color: #8f8f8f;
+    padding: 4px 0 4px 23px;
+    background: url(../images/icon/check-none.png) no-repeat left center;
+}
+.state #agree:checked+label {
+    background: url(../images/icon/check.png) no-repeat left center;
+}
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #8f8f8f;
+    border-radius: 5px;
+    color: #fff; font-weight: 700;
+    margin-bottom: 12px;
+}
+.login-btn:hover {background-color: #FFBE46;}
+.account-setting {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.account-setting a {
+    display: block;
+    width: 143px;
+    color: #8f8f8f;
+}
+.account-setting a:hover {color: #000;}
+.account-setting .account {text-align: end;}
+.account-setting .setting {text-align: start;}
+.account-setting span {color: #8f8f8f;}
+.join {
+    display: block;
+    font-weight: 600;
+    color: #8f8f8f;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+}
+.join:hover {
+    background-color: #FFBE46;
+    color: #fff;
+    border: none;
+}
